@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>video_img</key>
+		<string>http://c.hiphotos.baidu.com/video/pic/item/ae51f3deb48f8c545bc3315739292df5e0fe7fb2.jpg</string>
+		<key>video_title</key>
+		<string>艳遇2：小鲜肉</string>
+		<key>video_subTitle</key>
+		<string>邓天晴 刘帅良</string>
+	</dict>
+	<dict>
+		<key>video_img</key>
+		<string>http://c.hiphotos.baidu.com/video/pic/item/9825bc315c6034a8ee0a64fbc8134954082376e4.jpg</string>
+		<key>video_title</key>
+		<string>小时代3</string>
+		<key>video_subTitle</key>
+		<string>杨幂 郭采洁</string>
+	</dict>
+	<dict>
+		<key>video_img</key>
+		<string>http://c.hiphotos.baidu.com/video/pic/item/f703738da97739122ee2d869fb198618377ae2f6.jpg</string>
+		<key>video_title</key>
+		<string>医生</string>
+		<key>video_subTitle</key>
+		<string>金昌烷 裴素恩</string>
+	</dict>
+	<dict>
+		<key>video_img</key>
+		<string>http://d.hiphotos.baidu.com/video/pic/item/b3b7d0a20cf431ad9eb56c424836acaf2edd9861.jpg</string>
+		<key>video_title</key>
+		<string>不再说分手</string>
+		<key>video_subTitle</key>
+		<string>郑伊健 周秀娜</string>
+	</dict>
+	<dict>
+		<key>video_img</key>
+		<string>http://c.hiphotos.baidu.com/video/pic/item/f703738da977391224eade15fb198618377ae2f2.jpg</string>
+		<key>video_title</key>
+		<string>夜,女人</string>
+		<key>video_subTitle</key>
+		<string>王淑妍 欧定兴</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qgy-yq-gDn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--视频列表-->
+        <scene sceneID="DsJ-DP-U4z">
+            <objects>
+                <tableViewController id="YjQ-3H-olV" customClass="JieTableViewController" customModule="JieTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="22" sectionFooterHeight="22" id="EZO-Z4-gLf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="videoItem" rowHeight="107" id="IOb-cd-GfZ" customClass="JieTableViewCell" customModule="JieTableView" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IOb-cd-GfZ" id="97h-Ck-6YG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d71-iR-m9j">
+                                            <rect key="frame" x="143" y="49" width="169" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UbE-iN-Dfa">
+                                            <rect key="frame" x="8" y="10" width="117" height="77.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H9d-ha-NzH">
+                                            <rect key="frame" x="138" y="8" width="148" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
+                                <connections>
+                                    <outlet property="JieVideoImg" destination="UbE-iN-Dfa" id="Z5v-g8-iu0"/>
+                                    <outlet property="JieVideoSubTitle" destination="d71-iR-m9j" id="CTn-ed-jvN"/>
+                                    <outlet property="JieVideoTitle" destination="H9d-ha-NzH" id="Jki-OJ-9SA"/>
+                                    <segue destination="FaM-Zz-k65" kind="push" identifier="showDetail" id="LAu-Ur-Pur"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YjQ-3H-olV" id="HVd-92-Rkw"/>
+                            <outlet property="delegate" destination="YjQ-3H-olV" id="ATE-al-Gf2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="视频列表" id="n0T-G5-mcr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jp7-8R-1bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="256"/>
+        </scene>
+        <!--详情-->
+        <scene sceneID="xdr-7V-sZT">
+            <objects>
+                <viewController id="FaM-Zz-k65" customClass="JieDetailViewController" customModule="JieTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xL-KE-7cp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_img.png" id="PrN-8E-VsU">
+                                <rect key="frame" x="8" y="-11" width="304" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="详情" id="mQP-S6-9Xk"/>
+                    <connections>
+                        <outlet property="big_video_img" destination="PrN-8E-VsU" id="oBc-ww-yh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBD-HH-4lr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="256"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dby-gj-u0s">
+            <objects>
+                <navigationController id="qgy-yq-gDn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a56-wm-Zvm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YjQ-3H-olV" kind="relationship" relationship="rootViewController" id="6vw-gF-63y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dt-X6-Jh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77.333333333333329" y="256.54666666666668"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default_img.png" width="230" height="230"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
