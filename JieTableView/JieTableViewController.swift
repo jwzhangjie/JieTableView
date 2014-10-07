@@ -90,23 +90,30 @@ class JieTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
-    
 
-    /*
+    
     // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView!, moveRowAtIndexPath fromIndexPath: NSIndexPath!, toIndexPath: NSIndexPath!) {
-
+    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+        if fromIndexPath != toIndexPath{
+            var object: AnyObject = listVideos.objectAtIndex(fromIndexPath.row)
+            listVideos.removeObjectAtIndex(fromIndexPath.row)
+            if toIndexPath.row > self.listVideos.count{
+                self.listVideos.addObject(object)
+            }else{
+                self.listVideos.insertObject(object, atIndex: toIndexPath.row)
+            }
+        }
     }
-    */
+    
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView!, canMoveRowAtIndexPath indexPath: NSIndexPath!) -> Bool {
+    //在编辑状态，可以拖动设置item位置
+    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the item to be re-orderable.
         return true
     }
-    */
+    
 
     
     // MARK: - Navigation
