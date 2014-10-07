@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>video_url</key>
+		<string>http://v.cctv.com/flash/mp4video28/TMS/2013/05/06/265114d5f2e641278098503f1676d017_h264418000nero_aac32-1.mp4</string>
 		<key>video_img</key>
 		<string>http://c.hiphotos.baidu.com/video/pic/item/ae51f3deb48f8c545bc3315739292df5e0fe7fb2.jpg</string>
 		<key>video_title</key>
@@ -11,6 +13,8 @@
 		<string>邓天晴 刘帅良</string>
 	</dict>
 	<dict>
+		<key>video_url</key>
+		<string>rtmp://lm03.everyon.tv:1935/ptv3/phd4</string>
 		<key>video_img</key>
 		<string>http://c.hiphotos.baidu.com/video/pic/item/9825bc315c6034a8ee0a64fbc8134954082376e4.jpg</string>
 		<key>video_title</key>
@@ -19,6 +23,8 @@
 		<string>杨幂 郭采洁</string>
 	</dict>
 	<dict>
+		<key>video_url</key>
+		<string>rtmp://lm03.everyon.tv:1935/ptv3/phd507</string>
 		<key>video_img</key>
 		<string>http://c.hiphotos.baidu.com/video/pic/item/f703738da97739122ee2d869fb198618377ae2f6.jpg</string>
 		<key>video_title</key>
@@ -27,6 +33,8 @@
 		<string>金昌烷 裴素恩</string>
 	</dict>
 	<dict>
+		<key>video_url</key>
+		<string>http://ts.3gv.ifeng.com/live/iphone/zwt/index_multi.m3u8</string>
 		<key>video_img</key>
 		<string>http://d.hiphotos.baidu.com/video/pic/item/b3b7d0a20cf431ad9eb56c424836acaf2edd9861.jpg</string>
 		<key>video_title</key>
@@ -35,6 +43,8 @@
 		<string>郑伊健 周秀娜</string>
 	</dict>
 	<dict>
+		<key>video_url</key>
+		<string>http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8</string>
 		<key>video_img</key>
 		<string>http://c.hiphotos.baidu.com/video/pic/item/f703738da977391224eade15fb198618377ae2f2.jpg</string>
 		<key>video_title</key>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class JieDetailViewController: UIViewController {
     
@@ -14,6 +15,7 @@ class JieDetailViewController: UIViewController {
     @IBOutlet var big_video_img: UIImageView!
     //接受传进来的值
     var detailItem: NSDictionary?
+    var player:MPMoviePlayerViewController!
     
     
     func configureView() {
@@ -22,6 +24,9 @@ class JieDetailViewController: UIViewController {
             let url : String = detail.objectForKey("video_img") as String
             let dataImg : NSData = NSData(contentsOfURL: NSURL(string : url))
             self.big_video_img.image = UIImage(data: dataImg)
+            let video_url = NSURL(string: detail.objectForKey("video_url") as String)
+            player = MPMoviePlayerViewController(contentURL: video_url)
+            presentViewController(player, animated: true, completion: nil)
         }
     }
     

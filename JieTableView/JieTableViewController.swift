@@ -30,7 +30,7 @@ class JieTableViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        var item : NSDictionary = NSDictionary(objects:["http://c.hiphotos.baidu.com/video/pic/item/f703738da977391224eade15fb198618377ae2f2.jpg","新增数据", NSDate.date().description] , forKeys: ["video_img","video_title","video_subTitle"])
+        var item : NSDictionary = NSDictionary(objects:["http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8","http://c.hiphotos.baidu.com/video/pic/item/f703738da977391224eade15fb198618377ae2f2.jpg","新增数据", NSDate.date().description] , forKeys: ["video_img","video_title","video_subTitle","video_url"])
         listVideos.insertObject(item, atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
